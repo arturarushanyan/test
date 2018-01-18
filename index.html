@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Regna Bootstrap Template</title>
+  <title>Riota ICO</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -12,38 +12,53 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/icomoon/css/icomoon.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-media.css" rel="stylesheet">
 
 </head>
 
 <body>
-
   <!--==========================
     Hero Section
   ============================-->
   <section id="hero">
+    <div class="logo"></div>
+    <div class="laptop">
+      <div class="background"></div>
+    </div>
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+    <div class="asset"></div>
     <div class="hero-container">
-      <div class="line"></div>
+
+<!--
       <div class="container">
         <div id="logo">
-          <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+          <img src="img/logo.svg" alt="" title="" />
         </div>
       </div>
+-->
       <h1>Register and get your 60% discount</h1>
       <h2>During ICE Totally Gaming Expo</h2>
-      <input type="email" name="name" class="form-email" placeholder="Enter your email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-      <a class="btn-get-started">Register</a>
+      <div class="countdown">
+        <h1>02 : 23 : 59 : 59</h1>
+      </div>
+      <div>
+        <input type="email" name="name" class="form-email" placeholder="Enter your email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+        <a class="btn-get-started">Register</a>
+      </div>
     </div>
-    <div class="background-laptop"></div>
+
   </section><!-- #hero -->
 
   <main id="main">
@@ -54,12 +69,15 @@
       <div class="container">
         <div class="row about-container">
           <div class="content-title">
-            <h1>What is a Riota?</h1>
+            <h1 class="riota">What is a Riota?</h1>
             <div class="riota-coin"></div>
           </div>
           <div class="col-lg-12 content order-lg-2 order-2">
+            <div class="mask-circle"></div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.            </p>
+          </div>
+          <div class="col-lg-12 content order-lg-2 order-2">
             <div class="row">
               <div class="col-lg-4 col-md-6 icon-box wow fadeInUp">
                 <div class="circle">
@@ -87,13 +105,14 @@
               </div>
             </div>
           </div>
-        </div>
+          </div>
         <div class="row about-container">
           <div class="content-title">
             <h1>Centralised wallet</h1>
             <div class="wallet"></div>
           </div>
-          <div class="col-lg-12 content order-lg-1 order-2">
+          <div class="col-lg-12 wallet-content order-lg-1 order-2">
+            <div class="mask-rectangle"></div>
             <p>
               A decentralized exchange is an exchange market that does not rely on a third party service to hold the customer's funds. Instead, trades occur directly between users (peer to peer) through an automated process. This system can be achieved by creating proxy tokens (crypto assets that represent a certain fiat or crypto currency) or assets (that can represent shares in a company for example) or through a decentralized multi-signature escrow system, among other solutions that are currently being developed.
               This system contrasts with the current centralized model in which users deposit their funds and the exchange issues an IOU that can be freely traded on the platform. When a user asks to withdraw his funds, these are converted back into the cryptocurrency they represent and sent to their owner.             </p>
@@ -110,19 +129,19 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+              <div class="icon-user-control"></div>
               <h4 class="title"><a href="">User control found</a></h4>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
+              <div class="icon-anonymous"></div>
               <h4 class="title"><a href="">Anonymous</a></h4>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
+              <div class="icon-no-hack"></div>
               <h4 class="title"><a href="">No hacks and server downtime</a></h4>
             </div>
           </div>
@@ -187,6 +206,8 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+
 
 </body>
 </html>

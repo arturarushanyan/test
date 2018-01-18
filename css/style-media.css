@@ -1,0 +1,134 @@
+/*
+  Theme Name: Regna
+  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+/* Back to top button */
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero h1 {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero h2 {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* About Us Section
+--------------------------------*/
+
+@media (max-width: 768px) {
+  #about .about-container .title {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  #about .content-title {
+    background: none;
+    width: 100%;
+    height: 46px;
+    padding: 15px;
+    margin: 0;
+    line-height: 0;
+  }
+  #about .content-title .riota {
+    margin-left: 285px;
+  }
+  #about .content-title h1 {
+    font-size: 26px;
+  }
+  #about .riota-coin {
+    width: 280px;
+    height: 280px;
+    margin-top: 16px;
+    float: left;
+  }
+  #about .wallet {
+    width: 280px;
+    height: 192px;
+    margin-top: 16px;
+  }
+  .mask-circle {
+    shape-outside: ellipse(200px 200px at 32% 45%);
+    width: 360px;
+    height: 291px;
+    float: left;
+    opacity: .2;
+  }
+  .mask-rectangle {
+    width: 380px;
+    height: 260px;
+    float: right;
+    opacity: .2;
+  }
+}
+/* Services Section
+--------------------------------*/
+@media (min-width: 769px) {
+  #call-to-action .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
