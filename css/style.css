@@ -717,33 +717,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
 }
 #products .row.cards {
-    top: -115px;
+    top: -160px;
     position: relative;
 }
 #products .box {
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 4px;
-    height: 230px;
     position: relative;
     background: #fff;
 }
 
 #products .box .shop-icon{
     background: url(../img/04_shop.svg);
-    height: 114px;
-    width: 140px;
     position: relative;
     top: 20px;
     right: 4px;
     margin-left: auto;
     margin-right: auto;
+    padding: 41%;
 }
 
 #products .box p{
-    margin: 20px 0 30px 0;
-    line-height: 50px;
+    margin: 20px 0 0px 0;
+    padding-top: 20px;
 }
 
 #products .content-title h1 {
