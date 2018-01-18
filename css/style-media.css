@@ -30,7 +30,7 @@
 # Hero Section
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
-  #hero h1 {
+  #hero h1, #products h1 {
     font-size: 24px;
     line-height: 28px;
   }
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 576px) {
-  #hero h1 {
+  #hero h1, #products h1 {
     font-size: 14px;
     line-height: 28px;
   }
@@ -125,10 +125,9 @@
 }
 /* Services Section
 --------------------------------*/
-@media (min-width: 769px) {
-  #call-to-action .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+@media (min-width: 992px) {
+  #products .content-title h1 {
+    font-size: 26px;
   }
 }
+

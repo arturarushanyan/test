@@ -157,11 +157,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .line-1 {
   background: url(../img/line-1.svg) top center no-repeat;
-    width: 930px;
-    height: 174px;
+    width: 50%;
+    height: 80%;
     position: absolute;
     left: -100px;
-    top: -2px;
+    top: -3px;
     float: left;
 }
 #hero .line-2 {
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     position: absolute;
     left: -3px;
-    top: calc(100vh - 40%);
+    top: calc(100vh - 25%);
 }
 #hero .asset {
   background: url(../img/assets.png) top center no-repeat;
@@ -667,7 +667,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #services {
   background-size: cover;
-  padding: 20px 0 66px 0;
+  padding: 20px 0 200px 0;
 }
 
 #services .box {
@@ -712,23 +712,57 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Call To Action Section
 --------------------------------*/
-#call-to-action {
+#products {
   background: #f7fafd;
   background-size: cover;
-  padding: 80px 0;
+}
+#products .row.cards {
+    top: -115px;
+    position: relative;
+}
+#products .box {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 4px;
+    height: 230px;
+    position: relative;
+    background: #fff;
 }
 
-#call-to-action .cta-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
+#products .box .shop-icon{
+    background: url(../img/04_shop.svg);
+    height: 114px;
+    width: 140px;
+    position: relative;
+    top: 20px;
+    right: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#call-to-action .cta-text {
-  color: #fff;
+#products .box p{
+    margin: 20px 0 30px 0;
+    line-height: 50px;
 }
 
-#call-to-action .cta-btn {
+#products .content-title h1 {
+    margin: 30px 0 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 56px;
+    color: #46d1a4;
+    text-align: center;
+}
+
+#products p {
+    color: #363636;
+    text-align: center;
+}
+
+
+
+#products .cta-btn {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -743,7 +777,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#call-to-action .cta-btn:hover {
+#products .cta-btn:hover {
   background: #2dc997;
   border: 2px solid #2dc997;
 }
