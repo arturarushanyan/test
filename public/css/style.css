@@ -11,6 +11,7 @@ body {
   background: #a485ff;
   color: #fff;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -137,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(#765fb8, #a485ff);
+  z-index: 0;
 }
 
 #hero .logo {
@@ -153,13 +155,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 #hero .background {
-  background: url(../img/hero-bg.png) top center no-repeat;
-  width: 412px;
-  height: 374px;
+  background: url(../img/hero-bg.svg) top center no-repeat;
+  width: 676px;
+  height: 480px;
   position: absolute;
-  right: 0;
+  right: -133px;
   top: calc(100% - 70%);
   float: right;
+  z-index: -1000;
 }
 #hero .line-1 {
   background: url(../img/line-1.svg) top center no-repeat;
@@ -188,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
   top: 0;
   opacity: .5;
-  display: none;
+  z-index: -500;
 }
 
 #hero .header .logo {
@@ -202,6 +205,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 10px;
   text-align: center;
   vertical-align: middle;
+  z-index: 1000
 }
 
 
@@ -218,7 +222,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-weight: 300 ;
 }
-
+#hero .registration {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;
@@ -228,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 20px;
-  width: 250px;
+  width: 260px;
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
@@ -242,10 +250,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   border: 1px solid #fff;
   padding: 8px 20px;
-  width: 250px;
+  width: 260px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 10px;
+  margin: 10px 0;
   color: #fff;
   background: none;
   text-align: center;

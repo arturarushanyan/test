@@ -1,0 +1,36 @@
+{
+  "name": "riota_ice",
+  "version": "1.0.0",
+  "description": "Hello ICE 2018",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.7",
+    "express": "~4.15.5",
+    "express-messages": "*",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.3.0",
+    "mongodb": "*",
+    "mongoose": "*",
+    "nodemailer": "^4.4.1",
+    "uuid-token-generator": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tigransargsyan/riota_ice.git"
+  },
+  "author": "Riota Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tigransargsyan/riota_ice/issues"
+  },
+  "homepage": "https://github.com/tigransargsyan/riota_ice#readme"
+}
