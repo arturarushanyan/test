@@ -618,6 +618,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 135px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
 }
 #about .content-title {
   background: rgba(255, 255, 255, .05);
@@ -678,6 +680,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 100px;
   position: relative;
   background: rgba(255, 255, 255, .1);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 #services .icon {
@@ -716,68 +720,103 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f7fafd;
   background-size: cover;
 }
-#products .row.cards {
+#products .container.negative {
     top: -160px;
     position: relative;
 }
 #products .box {
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    border-radius: 4px;
-    position: relative;
-    background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
-
 #products .box .shop-icon{
-    background: url(../img/04_shop.svg);
-    position: relative;
-    top: 20px;
-    right: 4px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 41%;
+  background: url(../img/04_shop.svg) no-repeat;
+  position: relative;
+  top: 20px;
+  right: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 41%;
+  width: 0;
 }
-
+#products .box .laptop-icon{
+  background: url(../img/05_laptop.svg) no-repeat;
+  position: relative;
+  top: 20px;
+  right: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 41%;
+  width: 0;
+}
+#products .box .exchange-icon{
+  background: url(../img/06_exchange.svg) no-repeat;
+  position: relative;
+  top: 20px;
+  right: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 41%;
+  width: 0;
+}
+#products .box .profit-icon{
+  background: url(../img/07_profit.svg) no-repeat;
+  position: relative;
+  top: 20px;
+  right: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 41%;
+  width: 0;
+}
 #products .box p{
-    margin: 20px 0 0px 0;
-    padding-top: 20px;
+  margin: 20px 0 0px 0;
+  padding-top: 20px;
 }
 
 #products .content-title h1 {
-    margin: 30px 0 5px 0;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 56px;
-    color: #46d1a4;
-    text-align: center;
+  margin: 30px 0 5px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #46d1a4;
+  text-align: center;
 }
 
 #products p {
-    color: #363636;
-    text-align: center;
+  color: #363636;
+  text-align: center;
 }
-
-
-
-#products .cta-btn {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+#products .title {
+  text-align: center;
 }
-
-#products .cta-btn:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+#products .title a {
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 2px solid #46d1a4;
+  padding: 10px 36px;
+}
+[class^="product-"] {
+  top: 20px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#products .product-sport{
+  background: url(../img/08_sportsbook.svg) no-repeat;
+  width: 240px;
+}
+#products .product-casino{
+  background: url(../img/09_casino.svg) no-repeat;
+}
+#products .product-poker{
+  background: url(../img/10_poker.svg) no-repeat;
 }
 
 /*--------------------------------------------------------------
