@@ -136,7 +136,9 @@ jQuery(document).ready(function( $ ) {
   }
   google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
-
+  $('#messages-close, #messages-ok').on('click', function () {
+      $('#messages').hide();
+  })
 
 
 // custom code

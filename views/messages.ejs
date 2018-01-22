@@ -1,15 +1,17 @@
 <div id="messages">
     <div class="messages-container">
+        <% Object.keys(messages).forEach(function (type) { %>
         <div class="modal-header">
-            <button type="button" class="close" aria-label="Close">
-                <span aria-hidden="true">x</span>
+            <span class="message-type"><%-type%></span>
+            <button id="messages-close" type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <% Object.keys(messages).forEach(function (type) { %>
         <div class="message-body alert alert-<%= type %>">
             <% messages[type].forEach(function (message) { %>
             <p><%= message %></p>
             <% }) %>
+            <button id="messages-ok" class="btn btn-light">Ok</button>
         </div>
         <% }) %>
     </div>
