@@ -18,9 +18,6 @@ let transporter = nodeMailer.createTransport({
 });
 
 router.route('/register')
-    .get((req, res) => {
-        res.render('index');
-    })
     .post((req, res) => {
         let email = req.body.email,
             secretToken = new uuIdToken(256, uuIdToken.BASE62).generate();
@@ -35,47 +32,70 @@ router.route('/register')
 
         //check errors
         let errors = req.validationErrors();
-
         if(errors){
             console.log('errors',errors);
-            // res.render('register',{errors: errors})
+            res.render('register', {errors: errors})
         } else {
-            console.log("Success");
+            console.log("No validation errors");
             let newUser = new UserModel({
                 email: email,
                 secretToken: secretToken,
                 isVerified: false,
             });
-            UserModel.createUser(newUser, function (error, user) {
-                if(error){
-                    throw error;
+            UserModel.find({email: newUser.email}, (err, docs) => {
+                if(docs.length > 0){
+                    console.log('user exists');
+                    req.flash('danger', 'Email already exists');
+                    res.redirect('/');
                 } else {
-                    console.log(user);
+                    console.log('user creating');
+                    console.log(err);
+                    UserModel.createUser(newUser, function (error, user) {
+                        if(error){
+                            throw error;
+                        } else {
+                            console.log(user);
+                        }
+                    });
+
+                    //mail options for sending mail
+                    let mailOptions = {
+                        from: 'riotatest@gmail.com',
+                        to: email,
+                        subject: 'Welcome to Riota!',
+                        text: 'Congrats',
+                        html: '<p>Click <a href="' + req.protocol+ '://'+ req.get('host') + '/users/verify/' + secretToken + '">here</a> to verify your account</p>'
+                    };
+
+                    //send email
+                    transporter.sendMail(mailOptions, function (err, res) {
+                        if(err){
+                            console.log('Error', err);
+                        } else {
+                            console.log('Email Sent');
+                        }
+                    });
+                    req.flash('success','You are now registered, please verify your email');
+                    res.redirect('/');
                 }
-            });
-
-            req.flash('success','You are now registered');
-
-            //mail options for sending mail
-            let mailOptions = {
-                from: 'riotatest@gmail.com',
-                to: email,
-                subject: 'Welcome to Riota!',
-                text: 'Congrats',
-                html: '<p>Click <a href="' + req.protocol+ '://'+ req.get('host') + '/users/verify/' + secretToken + '">here</a> to verify your account</p>'
-            };
-
-            //send email
-            transporter.sendMail(mailOptions, function (err, res) {
-                if(err){
-                    console.log('Error', err);
-                } else {
-                    console.log('Email Sent');
-                }
-            });
-            res.location('/');
-            res.redirect('/');
+            })
         }
     });
+
+//email verification
+router.route('/verify/:secretToken')
+    .get((req, res) => {
+    UserModel.findOneAndUpdate({secretToken:req.params.secretToken}, {isVerified: true}, (err,user) => {
+        if(err){
+            throw err;
+        }
+        if(!user){
+            req.flash('error', 'no user')
+        }
+    });
+    //console.log('vser to be verified', user);
+    req.flash('success', 'Your email is successfully verified');
+    res.redirect('/');
+});
 
 module.exports = router;

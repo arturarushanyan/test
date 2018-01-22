@@ -6,6 +6,7 @@ const userRouter = require('./routes/userRouter');
 const expressValidator = require('express-validator');
 const session = require('express-session');
 const flash = require('connect-flash');
+const messages = require('express-messages');
 
 const app = express();
 const port = process.env.port | 3000;
@@ -25,6 +26,13 @@ app.use(session({
     resave: true
 }));
 
+//express messages
+app.use(flash());
+app.use(function (req,res,next) {
+    res.locals.messages = messages(req, res);
+    next();
+});
+
 //Validator
 app.use(expressValidator({
     errorFormatter: function (param,msg,value) {
@@ -41,17 +49,6 @@ app.use(expressValidator({
         }
     }
 }));
-
-app.use(flash());
-app.use(function (req,res,next) {
-    res.locals.messages = require('express-messages')(req,res);
-    next();
-});
-
-app.get('*', function (req, res, next) {
-    res.locals.user = req.user || null;
-    next();
-});
 
 app.use('/', indexRouter);
 app.use('/users', userRouter);
