@@ -907,6 +907,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
 }
 
+/*fix the overflow bug*/
+#hero .asset, html, body {
+  overflow-x: hidden;
+}
+
 /*Messages media*/
 @media screen and (max-width: 1280px) {
   .messages-container{
