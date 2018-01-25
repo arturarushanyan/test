@@ -1,0 +1,13 @@
+.Rectangle_16_copy {
+    border-radius: 6px;
+    background-image: -moz-linear-gradient( 43deg, rgb(254,159,89) 0%, rgb(240,161,84) 100%);
+    background-image: -webkit-linear-gradient( 43deg, rgb(254,159,89) 0%, rgb(240,161,84) 100%);
+    background-image: -ms-linear-gradient( 43deg, rgb(254,159,89) 0%, rgb(240,161,84) 100%);
+    box-shadow: 0px 0px 35px 0px rgba(148, 150, 152, 0.1);
+    position: absolute;
+    left: 1271px;
+    top: 2757px;
+    width: 289px;
+    height: 358px;
+    z-index: 174;
+}

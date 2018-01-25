@@ -148,7 +148,7 @@
     margin-top: 16px;
     float: left;
   }
-  #about .wallet {
+  #about .wallet, #platform .wallet, #platform .user-protect-system, #platform .promotion {
     width: 320px;
     height: 250px;
     margin-top: 16px;
@@ -166,11 +166,20 @@
     float: right;
     opacity: .2;
   }
+  .mask-rectangle.user-protect {
+    width: 290px;
+  }
+  .mask-rectangle.promotional {
+    width: 340px;
+  }
+  .mask-rectangle.user-protect {
+    float: left;
+  }
 }
 /* Services Section
 --------------------------------*/
 @media (min-width: 992px) {
-  #products .content-title h1 {
+  #products .content-title h1, #business .content-title h1, #platform .content-title h1 {
     font-size: 26px;
   }
 }
