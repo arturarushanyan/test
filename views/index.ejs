@@ -24,7 +24,6 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-media.css" rel="stylesheet">
-
 </head>
 <body>
 <!--==========================
@@ -39,9 +38,23 @@
     <div class="hero-container wow fadeInUp">
         <h1>Register and get your 60% discount</h1>
         <h2>During ICE Totally Gaming Expo</h2>
-        <div class="countdown">
-            <h1>02 : 23 : 59 : 59</h1>
+        <div id="countdowntimer">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <span class="future_date"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dateText 1">Days</td>
+                    <td class="dateText 2">Hours</td>
+                    <td class="dateText 3">Mins</td>
+                    <td class="dateText 4">Secs</td>
+                </tr>
+            </table>
         </div>
+
+
         <div class="registration">
             <form action="/users/register" method="post" enctype="application/x-www-form-urlencoded">
                 <input type="email" name="email" class="form-email" placeholder="Enter your email" />
@@ -93,7 +106,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 my-cards wow fadeInUp" data-wow-delay="0.4s">
                     <div class="box">
-                        <div class="laptop-icon"></div>
+                        <div class="online-icon"></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed. do. </p>
                     </div>
                 </div>
@@ -105,7 +118,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 my-cards wow fadeInUp" data-wow-delay="0.4s">
                     <div class="box">
-                        <div class="profit-icon"></div>
+                        <div class="discount-icon"></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed. do. </p>
                     </div>
                 </div>
@@ -190,25 +203,42 @@
                     <p class="cta-text"> A decentralized exchange is an exchange market that does not rely on a third party service to hold the customer's funds. Instead, trades occur directly between users (peer to peer) through an automated process. This system can be achieved by creating proxy tokens (crypto assets that represent a certain fiat or crypto currency) or assets (that can represent shares in a company for example) .</p>
                 </div>
             </div>
-            <div class="col-lg-12 content order-lg-2 order-2">
-                <div class="row cards">
+            <div class="row about-container distance">
+                <div class="content-title user-pr-sys">
                     <div class="phone"></div>
-                    <div class="col-lg-2 col-md-2 my-cards wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="box">
-                            <div class="fast-icon"></div>
-                            <p>Fast</p>
+                </div>
+                <div class="col-lg-12 wallet-content order-lg-1 order-2 wow fadeInRight">
+                    <div class="mask-rectangle phone-app"></div>
+                    <div>
+                        <div class="col-lg-2 col-md-2 right">
+                            <div class="box">
+                                <div class="fast-icon"></div>
+                                <p>Fast</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 my-cards wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="box">
-                            <div class="secure-icon"></div>
-                            <p>Secure</p>
+                        <div class="col-lg-2 col-md-2 right">
+                            <div class="box">
+                                <div class="secure-icon"></div>
+                                <p>Secure</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 my-cards wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="box">
-                            <div class="easy-icon"></div>
-                            <p>Easy to use</p>
+                        <div class="col-lg-2 col-md-2 right">
+                            <div class="box">
+                                <div class="easy-icon"></div>
+                                <p>Easy to use</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 right">
+                            <div class="box">
+                                <div class="fast-icon"></div>
+                                <p>Fast</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 right">
+                            <div class="box">
+                                <div class="secure-icon"></div>
+                                <p>Secure</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -259,10 +289,34 @@
             </div>
             <div class="row about-container distance">
                 <div class="content-title cent-wallet">
-                    <h1 class="left wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">Promotional module</h1>
-                    <div class="promotion wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;"></div>
+                    <h1 class="left wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">Security levels</h1>
+                    <div class="security-level wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;"></div>
                 </div>
                 <div class="col-lg-12 wallet-content order-lg-1 order-2 wow fadeInLeft">
+                    <div class="mask-rectangle security"></div>
+                    <p>
+                        Standard access functions.
+                    </p>
+                    <ul>
+                        <ul class="col-lg-8 col-md-8 list-content">
+                            <li>2FA google this is considering one of the most secure.</li>
+                            <li>SMS code, is quite secure but expensive.</li>
+                            <li>Double device authentication login in web and access by scanning QR.</li>
+                            <li>Finger print is a good second level verification from many device.</li>
+                            <li>Facial recognition is new for many phone camera.</li>
+                            <li>Voice recognition i don’t have enougth data to answer.</li>
+                            <li>Second level authentication you right is quite slow.</li>
+
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="row about-container distance">
+                <div class="content-title cent-wallet user-pr-sys">
+                    <h1 class="left wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">Promotional module</h1>
+                    <div class="promotion wow fadeInLeft" style="visibility: visible; animation-name: fadeInRight;"></div>
+                </div>
+                <div class="col-lg-12 wallet-content order-lg-1 order-2 wow fadeInRight">
                     <div class="mask-rectangle promotional"></div>
                     <p>
                         Current cryptocurrency exchange are not fair with the client, but wuth us user will be protected.
@@ -283,6 +337,7 @@
                     </ul>
                 </div>
             </div>
+
             <div class="container distance wow fadeIn">
                 <div class="row">
                     <div class="content-title wow fadeInUp">
@@ -294,20 +349,20 @@
                     <div class="row cards">
                         <div class="col-lg-2 col-md-2 my-cards wow fadeInUp" data-wow-delay="0.4s">
                             <div class="box _1">
-                                <div class="fast-icon"></div>
+                                <div class="product-sport"></div>
                                 <p>Sportsbook</p>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-2 my-cards wow fadeInUp" data-wow-delay="0.4s">
                             <div class="box _1">
-                                <div class="fast-icon"></div>
-                                <p>Sportsbook</p>
+                                <div class="product-casino"></div>
+                                <p>Casino</p>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-2 my-cards wow fadeInUp" data-wow-delay="0.4s">
                             <div class="box _1">
-                                <div class="fast-icon"></div>
-                                <p>Sportsbook</p>
+                                <div class="product-poker"></div>
+                                <p>Poker</p>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-2 my-cards wow fadeInUp" data-wow-delay="0.4s">
@@ -376,8 +431,7 @@
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
-
-
+<script src="js/countdown.js"></script>
 
 </body>
 </html>

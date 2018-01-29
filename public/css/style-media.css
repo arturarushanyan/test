@@ -148,7 +148,7 @@
     margin-top: 16px;
     float: left;
   }
-  #about .wallet, #platform .wallet, #platform .user-protect-system, #platform .promotion {
+  #about .wallet, #platform .wallet, #platform .user-protect-system, #platform .security-level, #platform .promotion {
     width: 320px;
     height: 250px;
     margin-top: 16px;
@@ -166,13 +166,16 @@
     float: right;
     opacity: .2;
   }
-  .mask-rectangle.user-protect {
-    width: 290px;
+  .mask-rectangle.phone-app {
+    width: 543px;
   }
-  .mask-rectangle.promotional {
+  .mask-rectangle.user-protect, .mask-rectangle.promotional {
+    width: 307px;
+  }
+  .mask-rectangle.security {
     width: 340px;
   }
-  .mask-rectangle.user-protect {
+  .mask-rectangle.user-protect, .mask-rectangle.phone-app, .mask-rectangle.promotional {
     float: left;
   }
 }
