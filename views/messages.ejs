@@ -11,7 +11,7 @@
             <% messages[type].forEach(function (message) { %>
             <p><%= message %></p>
             <% }) %>
-            <button id="messages-ok" class="btn btn-light">Ok</button>
+            <button id="messages-ok" class="btn btn-<%= type %>">Ok</button>
         </div>
         <% }) %>
     </div>

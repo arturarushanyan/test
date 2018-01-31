@@ -34,7 +34,8 @@ router.route('/register')
         let errors = req.validationErrors();
         if(errors){
             console.log('errors',errors);
-            res.render('register', {errors: errors})
+            res.render('index', {errors: errors});
+            console.log('validation errors',errors);
         } else {
             console.log("No validation errors");
             let newUser = new UserModel({

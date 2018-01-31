@@ -1219,6 +1219,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .message-body.alert{
   border-radius: 0 0 0.25rem 0.25rem;
+  background: #fff;
+  text-align: center;
+  border-color: #fff;
 }
 .modal-header .close{
   padding: 5px 10px;
@@ -1238,7 +1241,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   text-transform: capitalize;
   margin: 30px auto;
+  color: #46d1a4;
 }
+
+.message-body.alert-danger p{
+  color: #dc3545;
+}
+
 #messages-close, #messages-ok{
   cursor: pointer;
 }
@@ -1251,6 +1260,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: url("../img/phone-s.png") no-repeat;
   width: 555px;
   height: 570px;
+}
+
+#messages-ok {
+  padding: 5px 40px;
 }
 
 /*Icons*/
