@@ -657,5 +657,5 @@
 
 
 $('.future_date').countdowntimer({
-    dateAndTime : "2018/02/06 23:59:59",
+    dateAndTime : "2018/02/08 23:59:59",
 });
