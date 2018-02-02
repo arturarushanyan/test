@@ -5,15 +5,23 @@ const nodeMailer = require('nodemailer');
 const uuIdToken = require('uuid-token-generator');
 
 let transporter = nodeMailer.createTransport({
-    service: 'gmail',
-    secure: false,
+    // service: 'gmail',
+    // secure: false,
+    // port: 465,
+    // auth: {
+    //     user: 'riotatest@gmail.com',
+    //     pass: 'Riot$123'
+    // },
+    // tls: {
+    //     rejectUnauthorized: false
+    // }
+    service: 'Godaddy',
+    host: "smtpout.secureserver.net",
+    secureConnection: false,
     port: 465,
     auth: {
-        user: 'riotatest@gmail.com',
-        pass: 'Riot$123'
-    },
-    tls: {
-        rejectUnauthorized: false
+        user: "whitelist@riota.io",
+        pass: "Manager$1"
     }
 });
 
@@ -69,7 +77,7 @@ router.route('/register')
 
                     //mail options for sending mail
                     let mailOptions = {
-                        from: 'riotatest@gmail.com',
+                        from: 'whitelist@riota.io',
                         to: email,
                         subject: 'Welcome to Riota!',
                         text: 'Congrats',
