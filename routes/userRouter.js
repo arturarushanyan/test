@@ -19,7 +19,11 @@ let transporter = nodeMailer.createTransport({
 
 router.route('/register')
     .post((req, res) => {
-        let email = req.body.email,
+        let name = req.body.name,
+            email = req.body.email,
+            purchasePlan = req.body.purchasePlan,
+            description = req.body.description,
+            joinedToTelegram = req.body.telegram,
             secretToken = new uuIdToken(256, uuIdToken.BASE62).generate();
 
         console.log('verify token is ',secretToken);
@@ -39,7 +43,11 @@ router.route('/register')
         } else {
             console.log("No validation errors");
             let newUser = new UserModel({
+                name: name,
                 email: email,
+                purchasePlan: purchasePlan,
+                description: description,
+                joinedToTelegram: joinedToTelegram,
                 secretToken: secretToken,
                 isVerified: false,
             });

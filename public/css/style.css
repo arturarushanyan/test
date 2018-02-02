@@ -19,6 +19,11 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+
+html.popup-opened{
+  overflow: hidden;
+}
+
 li {
   list-style-type: none;
 }
@@ -247,11 +252,180 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300 ;
 }
 #hero .registration {
-  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding: 90px 60px;
 }
 
+#registration-container{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: rgba(0,0,0,0.7);
+}
+
+#registration-container.opened{
+  display: block;
+}
+.registration {
+  display: block;
+  width: 50%;
+  height: 40vh;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 20%;
+  left: 25%;
+}
+
+.registration .label-heading, .registration .label-info{
+  display: block;
+  color: #765fb8;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.registration .label-info {
+  opacity: 0.7;
+  font-size: 16px;
+}
+.registration .form-group {
+  text-align: left;
+  margin-bottom: 95px;
+  opacity: 0.2;
+  position: relative;
+}
+
+.registration .form-group.show{
+  opacity: 1;
+  transition: 1500ms;
+}
+.registration .form-group.re-telegram{
+  display: none;
+}
+.registration .form-group.re-telegram.show{
+  display: block;
+}
+.registration .form-group label {
+  width: 100%;
+}
+.form-input {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  border-width: 0 0 1px 0;
+  border-color: #a8a8a8;
+}
+
+.form-input:focus{
+  outline: none;
+}
+
+.form-radio{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+
+.form-radio.first{
+  margin-left: 0;
+}
+
+/*custom radio butons*/
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #765fb8;
+}
+.option-input:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 17px;
+  text-align: center;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #765fb8;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+/*custom radio butons*/
+
+.radio-inline-span{
+  color: #000000;
+  text-transform: capitalize;
+}
+.radio-inline-span.block{
+  display: inline-block;
+  width: 80%;
+}
+
+.telegram-please{
+  font-size: 24px;
+  color: #765fb8;
+}
+
+.btn-riota {
+  display: block;
+  padding: 5px 25px;
+  background: #765fb8;
+  color: #fff;
+  position: relative;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.btn-riota:after{
+  content: "press ENTER";
+  position: absolute;
+  left: calc(100% + 10px);
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+}
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -267,25 +441,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background: #46d1a4;
   border-style: none;
+  outline: none;
+  cursor: pointer;
 }
 
-#hero .form-email {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  border: 1px solid #fff;
-  padding: 8px 20px;
-  width: 320px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px 0;
-  color: #fff;
-  outline: none;
-  background: none;
-  text-align: center;
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
 }
-#hero input::placeholder {
-  color: #fff;
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
 }
 #hero .btn-get-started:hover {
   background: #2dc997;

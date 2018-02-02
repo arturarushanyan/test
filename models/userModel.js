@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
 
 //mongoose.connect('mongodb://localhost/riotatest');
-// mongoose.connect('mongodb://riota:Riot$123@ds251737.mlab.com:51737/riotadb');
 
-mongoose.connect('mongodb://127.0.0.1:27017/riota', (err,db) => {
+mongoose.connect('mongodb://127.0.0.1:27017/riota', (err) => {
     if (err){
-        console.log('something went wrong', err);
+        console.log('Error connecting to db', err);
     } else {
-        console.log("connected to riota database", db);
+        console.log("connected to riota database");
     }
 });
 
@@ -16,8 +15,20 @@ let db = mongoose.connection;
 
 //User Schema
 let UserSchema = mongoose.Schema({
+    name: {
+        type: String
+    },
     email: {
         type: String
+    },
+    purchasePlan: {
+        type: String
+    },
+    description: {
+        type: String
+    },
+    joinedToTelegram: {
+      type: Boolean
     },
     secretToken: {
         type: String

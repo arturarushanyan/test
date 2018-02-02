@@ -138,8 +138,69 @@ jQuery(document).ready(function( $ ) {
 
   $('#messages-close, #messages-ok').on('click', function () {
       $('#messages').hide();
-  })
+  });
 
 
-// custom code
+// custom code for subscribation
+  $('#join-button').on('click', function () {
+      $('#registration-container').addClass('opened');
+      $('html').addClass('popup-opened');
+  });
+
+  $('#registration-container').on('click', function () {
+      $(this).removeClass('opened');
+      $('html').removeClass('popup-opened');
+  });
+
+  $('.registration').on('click', function (event) {
+      event.stopPropagation();
+  });
+
+  $('.btn-riota').on('click', function (event) {
+      let nextGroup = $(this).parent().next('div.form-group');
+      let nextInput  = nextGroup.find('input');
+      event.preventDefault();
+      nextInput.focus();
+      nextGroup.addClass('show');
+  });
+
+  $('.form-text, .form-radio').on('keydown', function (event) {
+    let nextGroup = $(this).parent().parent().next('div.form-group');
+    let nextInput  = nextGroup.find('input');
+    if(event.keyCode === 13){
+      event.preventDefault();
+      nextInput.focus();
+      nextGroup.addClass('show');
+    }
+  });
+
+  $('.form-text').on('keyup', function (event) {
+      event.preventDefault();
+      let okButton = $(this).parent().parent().find('button');
+      if($(this).val().length > 0){
+          okButton.prop('disabled', false);
+      } else {
+          okButton.prop('disabled', true);
+      }
+  });
+
+  $('.form-radio').on('click', function () {
+      let okButton = $(this).parent().parent().find('button');
+      okButton.prop('disabled', false);
+  });
+
+  $('.telegram-button').on('click', function () {
+      let yesRadio = $('#yes-telegram');
+      if (yesRadio.prop('checked')) {
+        alert('yes');
+        $('#registration-button').focus();
+      } else {
+          alert('no');
+          $('.re-telegram').addClass('show');
+          $('.re-telegram').find('button').focus();
+      }
+  });
+  $('.btn-riota.back').on('click', function () {
+      $('#yes-telegram').focus();
+  });
 });

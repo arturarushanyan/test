@@ -53,13 +53,85 @@
                 </tr>
             </table>
         </div>
-
-
-        <div class="registration">
-            <form action="/users/register" method="post" enctype="application/x-www-form-urlencoded">
-                <input type="email" name="email" class="form-email" placeholder="Enter your email" />
-                <input type="submit" name="submit" class="btn-get-started" value="Register">
-            </form>
+        <button id="join-button" class="btn-get-started riota-green">Join Waitlist</button>
+        <div id="registration-container">
+            <div class="registration">
+                <form action="/users/register" method="post" enctype="application/x-www-form-urlencoded">
+                    <div class="form-group show">
+                        <label for="name">
+                            <span class="label-heading">Hello! So, what's your first name?</span>
+                            <span class="label-info">
+                                Thanks for your interest in being able to purchase tokens before they sell out, know we'll never share this information.
+                            </span>
+                            <input type="text" name="name" class="form-input form-text form-name" placeholder="Enter your name" />
+                        </label>
+                        <button class="btn btn-riota" disabled>Ok</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <span class="label-heading">Welcome {name}. What's your email?</span>
+                            <span class="label-info">
+                                By adding it, you also opt into our occasional newsletter.
+                            </span>
+                            <span class="label-info">
+                                Privacy policy {link here}
+                            </span>
+                            <input type="email" name="email" class="form-input form-text form-email" placeholder="Enter your email" />
+                        </label>
+                        <button class="btn btn-riota" disabled>Ok</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="purchasePlan">
+                            <span class="label-heading">How much do you plan to <strong>purchase</strong> of Refereum tokens in ETH?</span>
+                            <span class="label-info">
+                                Larger purchases have larger discounts.
+                            </span>
+                            <input type="radio" name="purchasePlan" class="form-input option-input radio form-radio first" value="less than 10"/>
+                            <span class="radio-inline-span">less than 10</span>
+                            <input type="radio" name="purchasePlan" class="form-input option-input radio form-radio" value="more than 10"/>
+                            <span class="radio-inline-span">more than 10</span>
+                            <input type="radio" name="purchasePlan" class="form-input option-input radio form-radio" value="more than 100"/>
+                            <span class="radio-inline-span">more than 100</span>
+                        </label>
+                        <button class="btn btn-riota" disabled>Ok</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">
+                            <span class="label-heading">What best <strong>describes you</strong>?</span>
+                            <span class="label-info">
+                                Don't worry, everyone can participate (it's just different paperwork for us).
+                            </span>
+                            <input type="radio" name="description" class="form-input option-input radio form-radio block" value="live in the us or us citizen"/>
+                            <span class="radio-inline-span block">live in the us or us citizen</span>
+                            <input type="radio" name="description" class="form-input option-input radio form-radio block" value="us accredited investor"/>
+                            <span class="radio-inline-span block">us accredited investor</span>
+                            <input type="radio" name="description" class="form-input option-input radio form-radio block" value="international buyer"/>
+                            <span class="radio-inline-span block">international buyer</span>
+                            <input type="radio" name="description" class="form-input option-input radio form-radio block" value="international accredited investor"/>
+                            <span class="radio-inline-span">international accredited investor</span>
+                        </label>
+                        <button class="btn btn-riota" disabled>Ok</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="telegram">
+                            <span class="label-heading">Have you joined our <strong>Telegram</strong></span>
+                            <span class="label-info">
+                                It's the best place for updates: https://t.me/ourlink
+                            </span>
+                            <input id="yes-telegram" type="radio" name="telegram" class="form-input option-input radio form-radio first" value="true"/>
+                            <span class="radio-inline-span">Yes</span>
+                            <input type="radio" name="telegram" class="form-input option-input radio form-radio" value="false"/>
+                            <span class="radio-inline-span">No</span>
+                        </label>
+                        <button class="btn btn-riota telegram-button" disabled>Ok</button>
+                    </div>
+                    <div class="form-group re-telegram">
+                        <span class="telegram-please">We never spam your email, so it's recommended you're in Telegram for important updates.</span>
+                        <button class="btn btn-riota back">Ok, take me back</button>
+                    </div>
+                    <input id="registration-button" type="submit" name="submit" class="btn-get-started" value="Register">
+                </form>
+            </div>
         </div>
     </div>
     <%- messages('messages', locals) %>
