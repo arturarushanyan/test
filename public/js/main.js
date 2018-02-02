@@ -192,10 +192,8 @@ jQuery(document).ready(function( $ ) {
   $('.telegram-button').on('click', function () {
       let yesRadio = $('#yes-telegram');
       if (yesRadio.prop('checked')) {
-        alert('yes');
         $('#registration-button').focus();
       } else {
-          alert('no');
           $('.re-telegram').addClass('show');
           $('.re-telegram').find('button').focus();
       }

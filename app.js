@@ -7,10 +7,10 @@ const expressValidator = require('express-validator');
 const session = require('express-session');
 const flash = require('connect-flash');
 const messages = require('express-messages');
+const passport = require('passport');
 
 const app = express();
 const port = process.env.port | 3000;
-
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -49,6 +49,8 @@ app.use(expressValidator({
         }
     }
 }));
+
+app.use(passport.initialize());
 
 app.use('/', indexRouter);
 app.use('/users', userRouter);
