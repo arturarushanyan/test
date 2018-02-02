@@ -131,7 +131,7 @@
   #about .content-title {
     background: none;
     width: 100%;
-    height: 46px;
+    /*height: 46px;*/
     padding: 15px;
     margin: 0;
     line-height: 0;
@@ -149,7 +149,7 @@
     float: left;
   }
   #about .wallet, #platform .wallet, #platform .user-protect-system, #platform .security-level, #platform .promotion {
-    width: 320px;
+    width: 100%;
     height: 250px;
     margin-top: 16px;
   }
@@ -182,7 +182,7 @@
 /* Services Section
 --------------------------------*/
 @media (min-width: 992px) {
-  #products .content-title h1, #business .content-title h1, #platform .content-title h1 {
+  #products .content-title h1, #business .content-title h1, #platform .content-title h1, #exchange .content-title h1 {
     font-size: 26px;
   }
 }
