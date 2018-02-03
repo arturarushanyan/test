@@ -58,10 +58,18 @@
 
   /*other*/
   #platform .phone-1 {
-    height: 372px;
+    height: 320px;
+    width: 160px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #platform .phone-2 {
     height: 406px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #exchange .huge-market {
     height: 348px;

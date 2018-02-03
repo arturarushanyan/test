@@ -663,7 +663,7 @@ label.error{
   margin: 30px 0 5px 0;
   font-size: 24px;
   font-weight: 500;
-  line-height: 56px;
+  line-height: 34px;
   text-align: center;
 }
 
@@ -746,7 +746,7 @@ label.error{
   margin: 0 0 15px 0;
   font-size: 16px;
   font-weight: 500;
-  line-height: 56px;
+  line-height: 28px;
   text-align: center;
 }
 #platform .content-title h1.left {
@@ -887,7 +887,7 @@ label.error{
   margin: 0 0 15px 0;
   font-size: 16px;
   font-weight: 500;
-  line-height: 56px;
+  line-height: 28px;
   text-align: center;
 }
 #exchange .content-title h1.left {
@@ -981,7 +981,7 @@ label.error{
   margin: 0 0 15px 0;
   font-size: 16px;
   font-weight: 500;
-  line-height: 56px;
+  line-height: 28px;
   text-align: center;
 }
 #map .content-title h1.left {
