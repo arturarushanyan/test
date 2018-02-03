@@ -1,6 +1,7 @@
 body {
   background: #9f80f7;
   color: #fff;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   -webkit-touch-callout: none;
@@ -725,7 +726,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #platform .content-title h1 {
   margin: 0 0 15px 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 56px;
   text-align: center;
@@ -775,7 +776,6 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/01_protection.svg") no-repeat;
   width: 200px;
   height: 200px;
-  margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -783,16 +783,15 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/02_secure.svg") no-repeat;
   width: 200px;
   height: 200px;
-  margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
 }
 #platform .promotion {
   background: url("../img/03_promotion.svg") no-repeat;
-  width: 69px;
-  height: 48px;
-  float: left;
-  margin-top: -20px;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #platform .content-title.wallet {
@@ -868,7 +867,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #exchange .content-title h1 {
   margin: 0 0 15px 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 56px;
   text-align: center;
@@ -962,7 +961,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #map .content-title h1 {
   margin: 0 0 15px 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 56px;
   text-align: center;

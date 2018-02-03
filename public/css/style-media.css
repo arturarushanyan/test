@@ -7,7 +7,78 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@media (max-width: 992px) {
+  .distance-smx {
+    margin-top: 0;
+  }
+  .distance-sm {
+    margin-top: 0;
+  }
+  .distance-md {
+    margin-top: 0;
+  }
+  .distance-padding-md {
+    padding-top: 0;
+  }
+  .icon-distance {
+    margin-bottom: 0;
+  }
+  .bottom-distance {
+    padding-bottom: 0;
+  }
+  .bottom-distance-sm {
+    padding-bottom: 0;
+  }
+  #platform .box-top {
+    margin-top: 0;
+  }
 
+  /*992px distance*/
+  .distance-smx-2 {
+    margin-top: 20px;
+  }
+  .distance-sm-2 {
+    margin-top: 30px;
+  }
+  .distance-md-2 {
+    margin-top: 60px;
+  }
+  .distance-padding-md-2 {
+    padding-top: 30px;
+  }
+  .icon-distance-2 {
+    margin-bottom: 0;
+  }
+  .bottom-distance-2 {
+    padding-bottom: 200px;
+  }
+  .bottom-distance-sm-2 {
+    padding-bottom: 80px;
+  }
+
+  /*other*/
+  #platform .phone-1 {
+    height: 372px;
+  }
+  #platform .phone-2 {
+    height: 406px;
+  }
+  #exchange .huge-market {
+    height: 348px;
+  }
+  #exchange .chart {
+    height: 266px;
+  }
+  #exchange .tools {
+    height: 210px;
+  }
+  #exchange .history {
+    height: 300px;
+  }
+  #exchange .ico-view {
+    height: 184px;
+  }
+}
 /* Back to top button */
 
 @media (max-width: 768px) {
