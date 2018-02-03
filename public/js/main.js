@@ -157,18 +157,20 @@ jQuery(document).ready(function( $ ) {
   });
 
   $('.btn-riota').on('click', function (event) {
-      let nextGroup = $(this).parent().next('div.form-group');
+      let nextGroup = $(this).parent().parent().next('div.form-group');
       let nextInput  = nextGroup.find('input');
       event.preventDefault();
+      $('.registration').scrollTo(nextGroup,1000);
       nextInput.focus();
       nextGroup.addClass('show');
   });
 
   $('.form-text, .form-radio').on('keydown', function (event) {
-    let nextGroup = $(this).parent().parent().next('div.form-group');
+    let nextGroup = $(this).parent().parent().parent().next('div.form-group');
     let nextInput  = nextGroup.find('input');
     if(event.keyCode === 13){
       event.preventDefault();
+      $('.registration').scrollTo(nextGroup,1000);
       nextInput.focus();
       nextGroup.addClass('show');
     }
@@ -192,13 +194,15 @@ jQuery(document).ready(function( $ ) {
   $('.telegram-button').on('click', function () {
       let yesRadio = $('#yes-telegram');
       if (yesRadio.prop('checked')) {
-        $('#registration-button').focus();
+          $('.registration').scrollTo($('#registration-button'),0);
+          $('.re-telegram').removeClass('show');
       } else {
+          $('.registration').scrollTo($('.re-telegram'),1000);
           $('.re-telegram').addClass('show');
-          $('.re-telegram').find('button').focus();
       }
   });
+
   $('.btn-riota.back').on('click', function () {
-      $('#yes-telegram').focus();
+      $('.registration').scrollTo($('.form-group.telegram'),1000);
   });
 });
