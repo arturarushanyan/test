@@ -159,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -100px;
     top: -3px;
     float: left;
+  z-index: -20000;
 }
 #hero .line-2 {
   background: url(../img/line-2.svg) top center no-repeat;
@@ -850,7 +851,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #exchange .exchange-preview {
   padding: 23%;
-  background: url("../img/exchange_preview.png") center no-repeat;
+  background: url("../img/exchange_preview.svg") center no-repeat;
 }
 #exchange .box .fast-icon{
   background: url(../img/01_fast-icon.svg) no-repeat;
