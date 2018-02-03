@@ -182,7 +182,7 @@
 /* Services Section
 --------------------------------*/
 @media (min-width: 992px) {
-  #products .content-title h1, #business .content-title h1, #platform .content-title h1, #exchange .content-title h1 {
+  #products .content-title h1, #business .content-title h1, #platform .content-title h1, #exchange .content-title h1, #map .content-title h1 {
     font-size: 26px;
   }
 }
