@@ -69,12 +69,18 @@ h1, h2, h3, h4, h5, h6 {
 .distance-md {
   margin-top: 130px;
 }
+.distance-padding-md {
+  padding-top: 100px;
+}
 .icon-distance {
   text-align: center;
   margin-bottom: 30px;
 }
 .bottom-distance {
   padding-bottom: 300px;
+}
+.bottom-distance-sm {
+  padding-bottom: 100px;
 }
 
 .right {
@@ -489,36 +495,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
-#about .about-container .connection-icon{
-  background: url(../img/01_connection.svg) no-repeat;
-  height: 120px;
-  width: 128px;
-  position: relative;
-  top: 20px;
-  right: 4px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#about .about-container .security-icon{
-  background: url(../img/02_security.svg) no-repeat;
-  height: 120px;
-  width: 107px;
-  position: relative;
-  top: 20px;
-  right: 4px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#about .about-container .transfer-icon{
-  background: url(../img/03_transfer.svg) no-repeat;
-  height: 104px;
-  width: 128px;
-  position: relative;
-  top: 28px;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
 .circle{
   background: #ffff;
   border-radius: 50%;
@@ -530,7 +506,9 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 #about .content-title {
+  /*
   background: rgba(255, 255, 255, .05);
+  */
   width: 100%;
   /*height: 46px;*/
   padding: 15px;
@@ -663,7 +641,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #products .content-title h1 {
   margin: 30px 0 5px 0;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 56px;
   text-align: center;
@@ -794,17 +772,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 #platform .user-protect-system {
   background: url("../img/01_protection.svg") no-repeat;
-  width: 69px;
-  height: 48px;
-  float: left;
+  width: 200px;
+  height: 200px;
   margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #platform .security-level {
   background: url("../img/02_secure.svg") no-repeat;
-  width: 69px;
-  height: 48px;
-  float: right;
+  width: 200px;
+  height: 200px;
   margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #platform .promotion {
   background: url("../img/03_promotion.svg") no-repeat;
@@ -919,23 +899,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 36px;
 }
 #exchange .huge-market {
-  background: url("../img/01_markets.png") no-repeat;
+  background: url("../img/01_markets.svg") no-repeat;
   height: 472px;
 }
 #exchange .chart {
-  background: url("../img/02_chart.png") no-repeat;
+  background: url("../img/02_chart.svg") no-repeat;
   height: 398px;
 }
 #exchange .tools {
-  background: url("../img/03_tools.png") no-repeat;
+  background: url("../img/03_tools.svg") no-repeat;
   height: 411px;
 }
 #exchange .history {
-  background: url("../img/04_history.png") no-repeat;
+  background: url("../img/04_history.svg") no-repeat;
   height: 542px;
 }
 #exchange .ico-view {
-  background: url("../img/05_ico-list.png") no-repeat;
+  background: url("../img/05_ico-list.svg") no-repeat;
   height: 415px;
 }
 #exchange .security-level {
@@ -962,6 +942,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 #exchange .about-container .wallet-content {
   margin-top: 20px;
+}
+/*--------------------------------------------------------------
+# Map
+--------------------------------------------------------------*/
+#map {
+  color: #363636;
+  background: #f7fafd;
+}
+#map .map-preview {
+  padding: 23%;
+  background: url("../img/map.svg") center no-repeat;
+}
+#map .box p{
+  margin: 12px 0 0 0;
+  padding-top: 25px;
+}
+
+#map .content-title h1 {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 56px;
+  text-align: center;
+}
+#map .content-title h1.left {
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+#map .content-title.user-pr-sys h1.left {
+  margin-left: 288px;
+}
+#map p {
+  text-align: center;
 }
 /*--------------------------------------------------------------
 # Footer
@@ -1045,12 +1059,12 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden;
 }
 #platform .phone-1 {
-  background: url("../img/phone_1.png") no-repeat;
+  background: url("../img/phone_1.svg") no-repeat;
   height: 570px;
 }
 
 #platform .phone-2 {
-  background: url("../img/phone_2.png") no-repeat;
+  background: url("../img/phone_2.svg") no-repeat;
   height: 570px;
 }
 
