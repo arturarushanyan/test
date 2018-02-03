@@ -64,7 +64,7 @@
                                 <span class="label-info">
                                 Thanks for your interest in being able to purchase tokens before they sell out, know we'll never share this information.
                             </span>
-                                <input type="text" name="name" class="form-input form-text form-name" placeholder="Enter your name" />
+                                <input type="text" name="name" minlength="2" class="form-input form-text form-name" placeholder="Enter your name" required />
                             </label>
                             <button class="btn btn-riota" disabled>Ok</button>
                         </div>
@@ -72,14 +72,14 @@
                     <div class="form-group">
                         <div class="vertical-align-div">
                             <label for="email">
-                                <span class="label-heading">Welcome {name}. What's your email?</span>
+                                <span class="label-heading">Welcome! What's your email?</span>
                                 <span class="label-info">
                                 By adding it, you also opt into our occasional newsletter.
                             </span>
                                 <span class="label-info">
                                 Privacy policy {link here}
                             </span>
-                                <input type="email" name="email" class="form-input form-text form-email" placeholder="Enter your email" />
+                                <input type="email" name="email" class="form-input form-text form-email" placeholder="Enter your email" required />
                             </label>
                             <button class="btn btn-riota" disabled>Ok</button>
                         </div>
@@ -87,11 +87,11 @@
                     <div class="form-group">
                         <div class="vertical-align-div">
                             <label for="purchasePlan">
-                                <span class="label-heading">How much do you plan to <strong>purchase</strong> of Refereum tokens in ETH?</span>
+                                <span class="label-heading">How much do you plan to <strong>purchase</strong> of Riota tokens in RIO?</span>
                                 <span class="label-info">
                                 Larger purchases have larger discounts.
                             </span>
-                                <input type="radio" name="purchasePlan" class="form-input option-input radio form-radio first" value="less than 10"/>
+                                <input type="radio" name="purchasePlan" class="form-input option-input radio form-radio first" value="less than 10" required />
                                 <span class="radio-inline-span">less than 10</span>
                                 <input type="radio" name="purchasePlan" class="form-input option-input radio form-radio" value="more than 10"/>
                                 <span class="radio-inline-span">more than 10</span>
@@ -108,7 +108,7 @@
                                 <span class="label-info">
                                 Don't worry, everyone can participate (it's just different paperwork for us).
                             </span>
-                                <input type="radio" name="description" class="form-input option-input radio form-radio first block" value="live in the us or us citizen"/>
+                                <input type="radio" name="description" class="form-input option-input radio form-radio first block" value="live in the us or us citizen" required />
                                 <span class="radio-inline-span block">live in the us or us citizen</span>
                                 <input type="radio" name="description" class="form-input option-input radio form-radio first block" value="us accredited investor"/>
                                 <span class="radio-inline-span block">us accredited investor</span>
@@ -127,7 +127,7 @@
                                 <span class="label-info">
                                 It's the best place for updates: https://t.me/ourlink
                             </span>
-                                <input id="yes-telegram" type="radio" name="telegram" class="form-input option-input radio form-radio first" value="true"/>
+                                <input id="yes-telegram" type="radio" name="telegram" class="form-input option-input radio form-radio first" value="true" required />
                                 <span class="radio-inline-span">Yes</span>
                                 <input type="radio" name="telegram" class="form-input option-input radio form-radio" value="false"/>
                                 <span class="radio-inline-span">No</span>
@@ -667,6 +667,7 @@
 <script src="/lib/jquery/jquery.min.js"></script>
 <script src="/lib/jquery/jquery-migrate.min.js"></script>
 <script src="/lib/jquery/jquery.scrollto.min.js"></script>
+<script src="/lib/jquery/jquery.validate.min.js"></script>
 <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/lib/easing/easing.min.js"></script>
 <script src="/lib/wow/wow.min.js"></script>

@@ -41,6 +41,9 @@ router.route('/register')
         //Form validation
         req.checkBody('email', 'email field is required').notEmpty();
         req.checkBody('email', 'email is not valid').isEmail();
+        req.checkBody('purchasePlan', 'this field is required').notEmpty();
+        req.checkBody('description', 'this field is required').notEmpty();
+        req.checkBody('telegram', 'this field is required').notEmpty();
 
         //check errors
         let errors = req.validationErrors();
@@ -65,7 +68,7 @@ router.route('/register')
                     req.flash('danger', 'Email already exists');
                     res.redirect('/');
                 } else {
-                    console.log('user creating');
+                    console.log('creating user');
                     console.log(err);
                     UserModel.createUser(newUser, function (error, user) {
                         if(error){

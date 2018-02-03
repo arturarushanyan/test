@@ -159,16 +159,19 @@ jQuery(document).ready(function( $ ) {
   $('.btn-riota').on('click', function (event) {
       let nextGroup = $(this).parent().parent().next('div.form-group');
       let nextInput  = nextGroup.find('input');
+      let thisInput = $(this).parent().parent().find('input');
       event.preventDefault();
-      $('.registration').scrollTo(nextGroup,1000);
-      nextInput.focus();
-      nextGroup.addClass('show');
+      if(thisInput.valid()){
+          $('.registration').scrollTo(nextGroup,1000);
+          nextInput.focus();
+          nextGroup.addClass('show');
+      }
   });
 
   $('.form-text, .form-radio').on('keydown', function (event) {
     let nextGroup = $(this).parent().parent().parent().next('div.form-group');
     let nextInput  = nextGroup.find('input');
-    if(event.keyCode === 13){
+    if(event.keyCode === 13 && $(this).valid()){
       event.preventDefault();
       $('.registration').scrollTo(nextGroup,1000);
       nextInput.focus();
@@ -205,4 +208,6 @@ jQuery(document).ready(function( $ ) {
   $('.btn-riota.back').on('click', function () {
       $('.registration').scrollTo($('.form-group.telegram'),1000);
   });
+
+  $('.registration-form').validate();
 });
