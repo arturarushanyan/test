@@ -1,12 +1,33 @@
 /*
-  Theme Name: Regna
-  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/*registration media*/
+@media (max-width: 1440px) {
+  .registration {
+    width: 60%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .registration {
+    width: 70%;
+    left: 15%;
+  }
+}
+@media (max-width: 768px) {
+  .registration {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .registration {
+    width: 90%;
+    left: 5%;
+  }
+}
+/*registration media end*/
 @media (max-width: 992px) {
   .distance-smx {
     margin-top: 0;

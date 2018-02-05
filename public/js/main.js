@@ -205,8 +205,10 @@ jQuery(document).ready(function( $ ) {
       }
   });
 
-  $('.btn-riota.back').on('click', function () {
-      $('.registration').scrollTo($('.form-group.telegram'),1000);
+  $('#back-to-telegram').on('click', function (event) {
+      event.preventDefault();
+      alert('ass');
+      $('.registration').scrollTo($('#telegram-form-group'),1000);
   });
 
   $('.registration-form').validate();

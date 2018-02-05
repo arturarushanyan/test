@@ -16,6 +16,21 @@ html.popup-opened{
   overflow: hidden;
 }
 
+.scrollable::-webkit-scrollbar-track,.tab-info-block-b::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: rgba(243, 242, 233, 0.7);
+
+}
+.scrollable::-webkit-scrollbar,.tab-info-block-b::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(243, 242, 233, 0.7);
+
+}
+.scrollable::-webkit-scrollbar-thumb,.tab-info-block-b::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #765fb8;
+}
+
 li {
   list-style-type: none;
 }
@@ -395,7 +410,7 @@ label.error{
   color: #765fb8;
 }
 
-.btn-riota {
+.btn-riota, #back-to-telegram {
   display: block;
   padding: 5px 25px;
   background: #765fb8;
@@ -404,7 +419,7 @@ label.error{
   margin-top: 15px;
   cursor: pointer;
 }
-.btn-riota:after{
+.btn-riota:after, #back-to-telegram:after{
   content: "press ENTER";
   position: absolute;
   left: calc(100% + 10px);
