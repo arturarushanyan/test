@@ -1087,6 +1087,19 @@ label.error{
   cursor: pointer;
 }
 
+#registration-close{
+  position: relative;
+  top: 0;
+  right: 0;
+  color: blue;
+  z-index: 999999999999;
+  opacity: 1;
+}
+
+#registration-close:after{
+  
+}
+
 /*fix the overflow bug*/
 #hero .asset, html, body {
   overflow-x: hidden;

@@ -3,6 +3,9 @@ const router = express.Router();
 const UserModel = require('../models/userModel');
 const nodeMailer = require('nodemailer');
 const uuIdToken = require('uuid-token-generator');
+const fs = require('fs');
+const ejs = require('ejs');
+const compiled = ejs.compile(fs.readFileSync('./views/emailtest.ejs', 'utf8'));
 
 let transporter = nodeMailer.createTransport({
     // service: 'gmail',
@@ -77,14 +80,16 @@ router.route('/register')
                             console.log(user);
                         }
                     });
-
+                    //generating email template
+                    const html = compiled({ name : name, verifyLink : "" + req.protocol + "://" + req.get('host') + "/users/verify/" + secretToken + ""});
                     //mail options for sending mail
                     let mailOptions = {
                         from: 'whitelist@riota.io',
                         to: email,
                         subject: 'Welcome to Riota!',
                         text: 'Congrats',
-                        html: '<p>Click <a href="' + req.protocol+ '://'+ req.get('host') + '/users/verify/' + secretToken + '">here</a> to verify your account</p>'
+                        // html: '<p>Click <a href="' + req.protocol+ '://'+ req.get('host') + '/users/verify/' + secretToken + '">here</a> to verify your account</p>'
+                        html: html
                     };
 
                     //send email
