@@ -37,6 +37,34 @@
     display: none;
   }
 }
+@media (max-width: 767px ){
+  #exchange .huge-market {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 224px;
+  }
+  #exchange .chart {
+    margin-left: auto;
+    margin-right: auto;
+    height: 222px;
+    max-width: 402px;
+  }
+  #exchange .tools {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 318px;
+  }
+  #exchange .history {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 316px;
+  }
+  #exchange .ico-view {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 316px;
+  }
+}
 @media (max-width: 680px) {
 .form-radio{
   margin-left: 0;
@@ -75,7 +103,7 @@
     margin-top: 0;
   }
   .distance-md {
-    margin-top: 0;
+    margin-top: 60px;
   }
   .distance-padding-md {
     padding-top: 0;
@@ -131,22 +159,51 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+}
+
+@media (max-width: 991px){
   #exchange .huge-market {
-    height: 348px;
+    max-height: 348px;
+    min-height: 272px;
   }
   #exchange .chart {
-    height: 266px;
+    max-height: 424px;
+    min-height: 174px;
   }
   #exchange .tools {
-    height: 210px;
+    max-height: 348px;
+    min-height: 180px;
   }
   #exchange .history {
-    height: 300px;
+    max-height: 348px;
+    min-height: 280px;
   }
   #exchange .ico-view {
-    height: 184px;
+    max-height: 348px;
+    min-height: 184px;
   }
 }
+
+@media (min-width: 992px){
+  #exchange .huge-market {
+    height: 472px;
+  }
+  #exchange .chart {
+    height: 398px;
+  }
+  #exchange .tools {
+    height: 411px;
+  }
+  #exchange .history {
+    height: 542px;
+  }
+  #exchange .ico-view {
+    height: 415px;
+  }
+}
+
+
 /* Back to top button */
 
 @media (max-width: 768px) {
@@ -246,6 +303,13 @@
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .circles {
+    height: 16px;
+    width: 16px;
+    margin: 0 4px 0 14px;
+    top: 3px;
+    position: relative;
   }
 
 }
