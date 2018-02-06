@@ -27,7 +27,8 @@
     left: 5%;
   }
   #exchange .user-protect {
-    height: 800px;
+    height: 1200px;
+
     background: url("../img/user-protect-md.svg") center no-repeat;
   }
   .view-sm {
