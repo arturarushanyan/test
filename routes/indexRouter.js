@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const basicAuth = require('../auth/basic');
+//const basicAuth = require('../auth/basic');
 
 router.route('/')
-    .get(basicAuth.isAuthenticated, (req, res) => {
+    .get((req, res) => {
         res.render('index');
     });
 router.route('/prev')
