@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [class^="icon-"] {
-  padding-top: 20px;
+  padding-top: 36px;
 }
 
 .distance-smx {
@@ -616,7 +616,9 @@ label.error{
 --------------------------------*/
 #products {
   background: url(../img/wave_blue.svg) bottom center no-repeat;
+  background-size: 102%;
   color: #fff;
+  box-shadow: 0 -1px 0 #232c44 inset;
 }
 .bggg {
   background: linear-gradient(#9f80f7, #765fb8);
@@ -629,7 +631,7 @@ label.error{
   border-radius: 4px;
   position: relative;
   background: #fff;
-  min-height: 200px;
+  min-height: 234px;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 #products .box p {
@@ -755,6 +757,8 @@ label.error{
 #platform {
   color: #fff;
   background: #232c44 url(../img/wave_white.svg) bottom center no-repeat;
+  background-size: 102%;
+  box-shadow: 0 -1px 0 #fff inset;
 
 }
 #platform .box-top {
@@ -993,23 +997,18 @@ label.error{
 }
 #exchange .huge-market {
   background: url("../img/01_markets.svg") no-repeat;
-  height: 472px;
 }
 #exchange .chart {
   background: url("../img/02_chart.svg") no-repeat;
-  height: 398px;
 }
 #exchange .tools {
   background: url("../img/03_tools.svg") no-repeat;
-  height: 411px;
 }
 #exchange .history {
   background: url("../img/04_history.svg") no-repeat;
-  height: 542px;
 }
 #exchange .ico-view {
   background: url("../img/05_ico-list.svg") no-repeat;
-  height: 415px;
 }
 #exchange .security-level {
   background: url("../img/secure.svg") no-repeat;
