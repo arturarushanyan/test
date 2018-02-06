@@ -5,7 +5,7 @@ const nodeMailer = require('nodemailer');
 const uuIdToken = require('uuid-token-generator');
 const fs = require('fs');
 const ejs = require('ejs');
-const compiled = ejs.compile(fs.readFileSync('./views/emailtest.ejs', 'utf8'));
+const compiled = ejs.compile(fs.readFileSync('./views/email.ejs', 'utf8'));
 
 let transporter = nodeMailer.createTransport({
     // service: 'gmail',

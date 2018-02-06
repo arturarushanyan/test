@@ -8,6 +8,6 @@ router.route('/')
     });
 router.route('/prev')
     .get((req, res) => {
-        res.render('email', {firstName: 'Artur'});
+        res.render('email', {name: 'Artur', verifyLink: 'www.link.com'});
     });
 module.exports = router;
