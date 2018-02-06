@@ -207,7 +207,6 @@ jQuery(document).ready(function( $ ) {
 
   $('#back-to-telegram').on('click', function (event) {
       event.preventDefault();
-      alert('ass');
       $('.registration').scrollTo($('#telegram-form-group'),1000);
   });
 
