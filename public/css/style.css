@@ -239,13 +239,13 @@ h1, h2, h3, h4, h5, h6 {
 #hero h2 {
   color: #eee;
   font-size: 26px;
-  font-weight: 300 ;
+  font-weight: 300;
 }
 
 #registration-container{
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 1000vh;
   position: absolute;
   z-index: 99999;
   top: 0;
@@ -411,6 +411,8 @@ label.error{
 .radio-inline-span.block{
   display: inline-block;
   width: calc(100% - 40px);
+  vertical-align: text-top;
+  margin-bottom: 5px;
 }
 
 .telegram-please{
@@ -469,6 +471,13 @@ label.error{
 #hero .btn-get-started:hover {
   background: #2dc997;
 }
+
+#main{
+  position: relative;
+  z-index: -1;
+}
+
+
 
 /* About Us Section
 --------------------------------*/

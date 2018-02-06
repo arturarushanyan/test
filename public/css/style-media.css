@@ -15,10 +15,16 @@
     left: 15%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .registration {
     width: 80%;
     left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .registration {
+    width: 90%;
+    left: 5%;
   }
   #exchange .user-protect {
     height: 800px;
@@ -31,10 +37,33 @@
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 680px) {
+.form-radio{
+  margin-left: 0;
+}
+.radio-inline-span{
+  display: inline-block;
+  width: calc(100% - 40px);
+  vertical-align: text-top;
+  margin-bottom: 5px;
+}
+}
+@media (max-width: 480px) and (max-height: 960px) {
   .registration {
-    width: 90%;
-    left: 5%;
+    height: 60%;
+    top: 20%;
+  }
+  .registration .form-group{
+    padding: 0 10px;
+  }
+}
+@media (max-width: 480px)  and (max-height: 640px) {
+  .registration {
+    height: 80%;
+    top: 10%;
+  }
+  .registration .form-group{
+    padding: 0 10px;
   }
 }
 /*registration media end*/
@@ -205,7 +234,7 @@
     right: -240px;
     top: calc(100% - 60%);
   }
-  #hero .btn-get-started, #hero .form-email {
+  #hero .btn-get-started {
     width: 260px;
   }
   #platform ul.list-content-3 {
