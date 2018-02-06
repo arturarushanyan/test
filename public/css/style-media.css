@@ -20,6 +20,10 @@
     width: 80%;
     left: 10%;
   }
+  #exchange .user-protect {
+    height: 800px;
+    background: url("../img/user-protect-md.svg") center no-repeat;
+  }
 }
 @media (max-width: 480px) {
   .registration {
@@ -247,11 +251,6 @@
     height: 280px;
     margin-top: 16px;
     float: left;
-  }
-  #about .wallet, #platform .wallet, #platform .user-protect-system, #platform .security-level, #platform .promotion {
-    width: 100%;
-    height: 250px;
-    margin-top: 16px;
   }
   .mask-circle {
     shape-outside: ellipse(200px 200px at 32% 45%);

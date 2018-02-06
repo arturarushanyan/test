@@ -33,6 +33,7 @@ html.popup-opened{
 
 li {
   list-style-type: none;
+  line-height: 30px;
 }
 
 li::before {
@@ -73,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [class^="icon-"] {
-  margin-top: 30px;
+  padding-top: 20px;
 }
 
 .distance-smx {
@@ -566,6 +567,35 @@ label.error{
   margin-top: -20px;
 }
 
+#about .box .standalone-icon{
+  background: url(../img/01_standalone.svg) no-repeat;
+  position: relative;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20%;
+  width: 0;
+}
+
+#about .box .api-icon{
+  background: url(../img/02_api.svg) no-repeat;
+  position: relative;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20%;
+  width: 0;
+}
+
+#about .box .api-ent-icon{
+  background: url(../img/03_api-esnt.svg) no-repeat;
+  position: relative;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20%;
+  width: 0;
+}
 /* Products
 --------------------------------*/
 #products {
@@ -576,8 +606,9 @@ label.error{
   background: linear-gradient(#9f80f7, #765fb8);
 }
 #products .box {
-  padding: 20px;
-  margin-bottom: 20px;
+/*  padding: 20px;
+  margin-bottom: 20px;*/
+  margin-top: 30px;
   text-align: center;
   border-radius: 4px;
   position: relative;
@@ -731,7 +762,7 @@ label.error{
   top: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 35%;
+  padding: 28%;
   width: 0;
 }
 #platform .box .secure-icon{
@@ -740,7 +771,7 @@ label.error{
   top: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 35%;
+  padding: 28%;
   width: 0;
 }
 #platform .box .easy-icon{
@@ -749,7 +780,16 @@ label.error{
   top: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 35%;
+  padding: 28%;
+  width: 0;
+}
+#platform .box .always-icon{
+  background: url(../img/04_always_wy.svg) no-repeat;
+  position: relative;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28%;
   width: 0;
 }
 #platform .box p{
@@ -866,13 +906,17 @@ label.error{
   padding: 23%;
   background: url("../img/exchange_preview.svg") center no-repeat;
 }
+#exchange .user-protect {
+  padding: 44%;
+  background: url("../img/user-protect.svg") center no-repeat;
+}
 #exchange .box .fast-icon{
   background: url(../img/01_fast-icon.svg) no-repeat;
   position: relative;
   top: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 35%;
+  padding: 28%;
   width: 0;
 }
 #exchange .box .secure-icon{
@@ -1158,6 +1202,14 @@ label.error{
   }
 }
 
+#platform ul.list-content-2 {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 54px;
+  text-align: center;
+}
 #platform ul.list-content {
   float: left;
 }
@@ -1195,4 +1247,28 @@ img{
 }
 .content-title {
   width: 100%;
+  padding-left: 0;
+}
+
+.circles-parent {
+  text-align:center;
+  padding-bottom: 24px;
+}
+.circles {
+  height: 22px;
+  width: 22px;
+  border-radius:50%;
+  display:inline-block;
+  margin: 0 8px 0 20px;
+  top: 5px;
+  position: relative;
+}
+.legal {
+  background: #009e6b;
+}
+.illegal {
+  background: #da533d;
+}
+.noinfo {
+  background: #bcbfc4;
 }
