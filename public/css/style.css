@@ -108,6 +108,13 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 
+.view-sm {
+  display: none;
+}
+.view-md {
+  display: block;
+}
+
 #logo img {
   width: 120px;
 }
@@ -1207,8 +1214,16 @@ label.error{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding: 54px;
+  padding-top: 54px;
   text-align: center;
+}
+
+#platform ul.list-content-3 {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 24px;
 }
 #platform ul.list-content {
   float: left;

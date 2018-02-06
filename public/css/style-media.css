@@ -24,6 +24,12 @@
     height: 800px;
     background: url("../img/user-protect-md.svg") center no-repeat;
   }
+  .view-sm {
+    display: block;
+  }
+  .view-md {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   .registration {
@@ -52,7 +58,7 @@
     padding-bottom: 0;
   }
   .bottom-distance-sm {
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
   #platform .box-top {
     margin-top: 0;
@@ -202,6 +208,17 @@
   #hero .btn-get-started, #hero .form-email {
     width: 260px;
   }
+  #platform ul.list-content-3 {
+    text-align: center;
+  }
+}
+@media (max-width: 470px){
+  .col-custom-1 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
 }
 
 
