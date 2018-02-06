@@ -1146,6 +1146,9 @@ label.error{
   cursor: pointer;
 }
 
+#messages-ok {
+  background: #46d1a4;
+}
 #registration-close{
   position: relative;
   top: 0;
@@ -1156,7 +1159,12 @@ label.error{
 }
 
 #registration-close:after{
-  
+  /*content: 'x';*/
+  /*color: white;*/
+  /*font-size: 20px;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*right: 0;*/
 }
 
 /*fix the overflow bug*/
