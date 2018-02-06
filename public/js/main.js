@@ -189,6 +189,16 @@ jQuery(document).ready(function( $ ) {
       }
   });
 
+    $('.form-text').on('change', function (event) {
+        event.preventDefault();
+        let okButton = $(this).parent().parent().find('button');
+        if($(this).val().length > 0){
+            okButton.prop('disabled', false);
+        } else {
+            okButton.prop('disabled', true);
+        }
+    });
+
   $('.form-radio').on('click', function () {
       let okButton = $(this).parent().parent().find('button');
       okButton.prop('disabled', false);
