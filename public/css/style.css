@@ -1148,6 +1148,7 @@ label.error{
 
 #messages-ok {
   background: #46d1a4;
+  border-color: #46d1a4;
 }
 #registration-close{
   position: relative;
